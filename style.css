@@ -1,26 +1,94 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 .container {
-    text-align: center;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .cell {
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .cell:hover {
-    background-color: #eee;
-  }
-  
+  text-align: center;
+  height: 100vh;
+  background-color:lightgray;
+}
+
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  margin: 50px auto; /* Center horizontally */
+  width: 320px; /* Adjust width to fit properly */
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: red;
+}
+
+
+
+.heading {
+  height: 50px;
+  width: 100%;
+  background-color: blueviolet;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  background-color: blue;
+  color: #fff;
+  margin-top: 23px;
+}
+
+button:hover {
+  background-color: darkblue;
+  color: aliceblue;
+}
+
+#cell1 {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#cell2 {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#cell3 {
+  border-bottom: 2px solid black;
+}
+
+#cell4 {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#cell5 {
+  border-bottom: 2px solid black;
+}
+
+#cell6 {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#cell7 {
+  border-right: 2px solid black;
+}
+
+#cell8 {
+  border-right: 2px solid black;
+}
+#message{
+  width: 100px;
+  height: 30px;
+  margin: auto;
+  font-size: 1.5rem;
+  color: green;
+}
